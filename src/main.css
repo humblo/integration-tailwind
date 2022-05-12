@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: 'Graphik'!important;
+}
+/*hamburger*/
+.menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.4s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+}
+.showMenu {
+    transform: translateY(0);
+}

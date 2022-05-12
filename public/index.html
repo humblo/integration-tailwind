@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>
+        Figmaland business - test Ctrlweb
+    </title>
+    <meta name="description" content="FigmaLand business - ctrlweb"/>
+    <meta name="keywords" content=""/>
+    <meta name="author" content="Herinjaka Modeste"/>
+    <link href="./fonts/stylesheet.css" rel="stylesheet"/>
+    <link href="./styles.css" rel="stylesheet"/>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6/dist/vue.js"></script>
+    <script src="./js/app.js" defer></script>
+</head>
+<body class="leading-normal tracking-normal graphik-regular">
+<header class="bg-cover bg-center bg-[url('./images/header-background.png')]">
+    <!--Nav-->
+    <nav id="header" class="w-full z-30 top-0 text-white">
+        <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-6 lg:px-6">
+            <div class="w-full flex-grow lg:flex lg:items-center lg:w-1/3 xl:w-1/3 hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20">
+                <ul class="lg:flex justify-start flex-1 items-center">
+                    <li class="mr-2">
+                        <a class="inline-block text-white no-underline hover:underline py-2 px-4"
+                           href="#">Home</a>
+                    </li>
+                    <li class="mr-2">
+                        <a class="inline-block text-white no-underline hover:underline py-2 px-4"
+                           href="#">Product</a>
+                    </li>
+                    <li class="mr-2">
+                        <a class="inline-block text-white no-underline hover:underline py-2 px-4"
+                           href="#">Pricing</a>
+                    </li>
+                    <li class="mr-2">
+                        <a class="inline-block text-white no-underline hover:underline py-2 px-4"
+                           href="#">About</a>
+                    </li>
+                    <li class="mr-2">
+                        <a class="inline-block text-white no-underline hover:underline py-2 px-4"
+                           href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="pl-4 flex items-center lg:w-1/5 xl:w-1/5 2xl:w-1/3">
+                <a class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+                   href="#">
+                    <img src="./images/logo1x.png" title="Figmaland business"/>
+                </a>
+            </div>
+            <!-- mobile menu -->
+            <div class="block lg:hidden pr-4">
+                <button class=" hamburger cursor:pointer z-100 items-center p-1 text-white hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out">
+                    <svg class="menuIcon" width="28" height="16" viewBox="0 0 28 16" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0.667969 0H27.3346V2.66667H0.667969V0ZM7.33463 6.66667H27.3346V9.33333H7.33463V6.66667ZM15.668 13.3333H27.3346V16H15.668V13.3333Z"
+                              fill="white"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="menu bg-noir-primaire">
+                <div class="flex justify-end mb-[20px]">
+                    <a class="closeIcon mr-[10%]">
+                <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
+                     width="16pt" height="16pt" viewBox="0 0 1280.000000 1280.000000"
+                     preserveAspectRatio="xMidYMid meet">
+                    <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
+                       fill="#ffffff" stroke="none">
+                        <path d="M1545 12784 c-85 -19 -167 -51 -243 -95 -69 -41 -1089 -1049 -1157
+-1144 -101 -141 -140 -263 -140 -440 0 -169 36 -293 125 -427 29 -43 705 -726
+2149 -2170 l2106 -2108 -2111 -2112 c-1356 -1358 -2124 -2133 -2147 -2169 -88
+-137 -121 -249 -121 -419 -1 -181 37 -302 139 -445 68 -95 1088 -1103 1157
+-1144 273 -159 604 -143 853 42 22 17 986 976 2143 2131 l2102 2101 2103
+-2101 c1156 -1155 2120 -2114 2142 -2131 69 -51 130 -82 224 -113 208 -70 431
+-44 629 71 69 41 1089 1049 1157 1144 101 141 140 263 140 440 0 166 -36 290
+-121 422 -25 39 -746 767 -2148 2171 l-2111 2112 2107 2108 c2207 2208 2162
+2161 2219 2303 75 187 77 392 4 572 -53 132 -74 157 -615 700 -289 291 -552
+548 -585 572 -141 101 -263 140 -440 140 -166 0 -289 -35 -420 -120 -41 -26
+-724 -702 -2172 -2149 l-2113 -2111 -2112 2111 c-1454 1452 -2132 2123 -2173
+2150 -64 41 -149 78 -230 101 -79 22 -258 26 -340 7z"/>
+                    </g>
+                </svg>
+                    </a>
+                </div>
+                <ul class="flex flex-col items-center ">
+                    <li class="my-5"><a class="menuItem text-2xl" href="#">Home</a></li>
+                    <li class="my-5"><a class="menuItem text-2xl" href="#">Product</a></li>
+                    <li class="my-5"><a class="menuItem text-2xl" href="#">Pricing</a></li>
+                    <li class="my-5"><a class="menuItem text-2xl" href="#">About</a></li>
+                    <li class="my-5"><a class="menuItem text-2xl" href="#">Contact</a></li>
+                </ul>
+            </div>
+            <!-- / mobile menu -->
+            <div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20 lg:w-1/5 xl:w-1/3">
+                <ul class="list-reset lg:flex justify-end flex-1 items-center" id="social-network">
+                    <li class="mr-3">
+                        <a href="#">
+                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M37.6845 10.6854C36.4597 11.2137 35.1269 11.5939 33.754 11.742C35.1793 10.8952 36.2467 9.55742 36.7559 7.9796C35.4184 8.77527 33.9531 9.33321 32.4251 9.62867C31.7865 8.94593 31.0141 8.40203 30.156 8.03086C29.298 7.65969 28.3727 7.4692 27.4379 7.47127C23.6554 7.47127 20.6134 10.5373 20.6134 14.2997C20.6134 14.828 20.6775 15.3564 20.7815 15.8647C15.1179 15.5685 10.0666 12.8628 6.70842 8.72008C6.09652 9.76522 5.77587 10.9552 5.77981 12.1663C5.77981 14.5359 6.9846 16.6252 8.82179 17.854C7.7391 17.8114 6.68177 17.5138 5.73579 16.9854V17.0695C5.73579 20.3876 8.08131 23.1374 11.2073 23.7698C10.6204 23.9223 10.0166 24.0003 9.41017 24.002C8.96588 24.002 8.54561 23.958 8.12133 23.8979C8.98589 26.6037 11.5035 28.569 14.5015 28.633C12.156 30.4702 9.21805 31.5509 6.02798 31.5509C5.4556 31.5509 4.92726 31.5309 4.37891 31.4668C7.40487 33.4081 10.9952 34.5288 14.8617 34.5288C27.4139 34.5288 34.2823 24.1301 34.2823 15.1042C34.2823 14.808 34.2823 14.5118 34.2623 14.2156C35.5912 13.243 36.7559 12.0382 37.6845 10.6854Z"
+                                      fill="white"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a href="#">
+                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.7517 4.98962H6.29255C5.58409 4.98962 5.01172 5.562 5.01172 6.27046V35.7296C5.01172 36.438 5.58409 37.0104 6.29255 37.0104H35.7517C36.4601 37.0104 37.0325 36.438 37.0325 35.7296V6.27046C37.0325 5.562 36.4601 4.98962 35.7517 4.98962ZM32.0533 14.3357H29.4956C27.4903 14.3357 27.1021 15.2883 27.1021 16.6892V19.7752H31.8892L31.2648 24.6064H27.1021V37.0104H22.1108V24.6104H17.9361V19.7752H22.1108V16.2129C22.1108 12.0782 24.6365 9.82476 28.3268 9.82476C30.096 9.82476 31.613 9.95685 32.0573 10.0169V14.3357H32.0533Z"
+                                      fill="white"/>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mr-3">
+                        <a href="#">
+                            <svg width="34" height="34" viewBox="0 0 34 34" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M31.736 0.989624H2.27692C1.56847 0.989624 0.996094 1.562 0.996094 2.27046V31.7296C0.996094 32.438 1.56847 33.0104 2.27692 33.0104H31.736C32.4445 33.0104 33.0169 32.438 33.0169 31.7296V2.27046C33.0169 1.562 32.4445 0.989624 31.736 0.989624ZM10.4943 28.2753H5.74317V12.9934H10.4943V28.2753ZM8.12072 10.9041C7.57607 10.9041 7.04365 10.7425 6.59079 10.44C6.13794 10.1374 5.78498 9.70729 5.57655 9.2041C5.36812 8.70091 5.31359 8.14722 5.41984 7.61303C5.5261 7.07885 5.78837 6.58817 6.1735 6.20305C6.55862 5.81792 7.0493 5.55565 7.58348 5.4494C8.11766 5.34314 8.67136 5.39768 9.17455 5.6061C9.67773 5.81453 10.1078 6.16749 10.4104 6.62035C10.713 7.07321 10.8745 7.60562 10.8745 8.15027C10.8705 9.67126 9.6377 10.9041 8.12072 10.9041ZM28.2818 28.2753H23.5347V20.8425C23.5347 19.0694 23.5027 16.7919 21.0651 16.7919C18.5955 16.7919 18.2153 18.7211 18.2153 20.7144V28.2753H13.4722V12.9934H18.0271V15.0828H18.0912C18.7236 13.882 20.2726 12.6132 22.5861 12.6132C27.3972 12.6132 28.2818 15.7792 28.2818 19.8939V28.2753Z"
+                                      fill="white"/>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--Hero-->
+    <div class="pt-24 hero h-[864px] xl:h-[900px] 2xl:h-[930px]">
+        <div class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+            <!--Left Col-->
+            <div class="flex flex-col w-full justify-center items-center text-center md:text-center px-15">
+                <h2 class="my-4 xl:mx-[25%] text-white text-[48px] sm:text-[53px] md:text-[58px] lg:text-[63px] xl:text-[68px] 2xl:text-[74px] graphik-medium md:font-[500] lg:font-[600] xl:font-[600] 2xl:font-[700]">
+                    The best products start with Figma
+                </h2>
+                <h4 class="leading-normal mb-8 mt-8 px-20 graphik-medium text-[28px] text-white">
+                    Most calendars are designed for teams.
+                </h4>
+                <button class="mx-auto mt-20 lg:mx-0 bg-bleu hover:no-underline hover:bg-white rounded-full my-6 py-4 px-8 graphik-medium text-xl pl-14 pr-14 text-white hover:text-bleu cursor-pointer">
+                    Try it For Free
+                </button>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- begin bloc 1 -->
+<section class="bg-white px-3 mt-[15%] md:mt-[10%] ">
+    <h2 class="my-4 leading-tight text-center graphik-medium text-[48px] text-noir-primaire">
+        Features
+    </h2>
+    <h4 class="my-4 px-20 leading-tight text-center graphik-medium text-[28px] text-noir-secondaire">
+        Most calendars are designed for teams
+    </h4>
+</section>
+<!-- end bloc 1-->
+<!-- begin bloc 2-->
+<section class="bg-white py-8">
+    <div class="flex flex-col-reverse md:flex-col">
+        <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+            <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+                <div class="flex-1 mx-auto">
+                    <p class="w-full px-6">
+                        <svg width="47" height="47" viewBox="0 0 47 47" fill="none" xmlns="http://www.w3.org/2000/svg"
+                             class="mx-auto">
+                            <path d="M14.6042 0.625C18.3117 0.625 21.8673 2.0978 24.4889 4.7194C27.1105 7.34101 28.5833 10.8967 28.5833 14.6042C28.5833 17.9846 27.3888 21.0854 25.3808 23.5H46.375V46.375H23.5V25.3808C21.0854 27.3888 17.9846 28.5833 14.6042 28.5833C10.8967 28.5833 7.34101 27.1105 4.7194 24.4889C2.0978 21.8673 0.625 18.3117 0.625 14.6042C0.625 10.8967 2.0978 7.34101 4.7194 4.7194C7.34101 2.0978 10.8967 0.625 14.6042 0.625Z"
+                                  fill="#2091F9"/>
+                        </svg>
+                    </p>
+                    <h3 class="w-full graphik-black my-6 px-6 text-[20px] text-noir-primaire text-center">
+                        Lorem ipsum dolor sit amet.
+                    </h3>
+                    <p class="text-noir-secondaire text-center px-6 mb-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo
+                        posuere et sit amet ligula.
+                    </p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+                <div class="flex-1 mx-auto">
+                    <p class="w-full px-6">
+                        <svg width="45" height="42" viewBox="0 0 45 42" fill="none" xmlns="http://www.w3.org/2000/svg"
+                             class="mx-auto">
+                            <path d="M18.2486 41.65C22.402 40.0167 21.492 35.5134 19.392 32.6667C17.3153 29.75 14.4453 27.7434 11.552 25.8067C9.48756 24.5055 7.64432 22.8829 6.09197 21C5.43863 20.23 4.10863 18.8067 5.46197 18.5267C6.83863 18.2467 9.21863 19.6 10.432 20.1134C12.5553 21 14.6553 22.0267 16.6153 23.24L18.972 19.2734C15.332 16.87 10.6653 14.7467 6.3253 14.1167C3.85197 13.7434 1.23863 14.2567 0.398634 16.94C-0.348033 19.25 0.841967 21.5834 2.1953 23.4034C5.39197 27.6734 10.362 29.7267 14.072 33.4134C14.8653 34.1834 15.822 35.0934 16.2886 36.1667C16.7786 37.1934 16.662 37.2634 15.5653 37.2634C12.672 37.2634 9.0553 35 6.69864 33.5067L4.34197 37.4734C7.91197 39.6667 13.8853 43.0967 18.2486 41.65ZM44.1253 5.25004C44.6386 4.7367 44.6386 3.8967 44.1253 3.4067L41.092 0.373369C40.8476 0.137831 40.5214 0.00622559 40.182 0.00622559C39.8425 0.00622559 39.5164 0.137831 39.272 0.373369L36.892 2.75337L41.7453 7.6067L44.1253 5.25004ZM21.1653 18.48V23.3334H26.0186L40.3686 8.98337L35.5153 4.13004L21.1653 18.48Z"
+                                  fill="#2091F9"/>
+                        </svg>
+                    </p>
+                    <h3 class="w-full graphik-black my-6 px-6 text-[20px] text-noir-primaire text-center">
+                        Lorem ipsum dolor sit amet.
+                    </h3>
+                    <p class="text-noir-secondaire text-center px-6 mb-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo
+                        posuere et sit amet ligula.
+                    </p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+                <div class="flex-1 mx-auto">
+                    <p class="w-full px-6">
+                        <svg width="61" height="61" viewBox="0 0 61 61" fill="none" xmlns="http://www.w3.org/2000/svg"
+                             class="mx-auto">
+                            <path d="M52.6366 11.7679L49.2308 8.36209C48.2904 7.37084 46.6383 7.37084 45.647 8.36209L22.8737 31.1354L29.8633 38.125L52.6366 15.3517C53.6279 14.3604 53.6279 12.7083 52.6366 11.7679ZM17.7904 35.5833C15.7681 35.5833 13.8286 36.3867 12.3987 37.8167C10.9687 39.2466 10.1654 41.1861 10.1654 43.2083C10.1654 46.5379 7.21703 48.2917 5.08203 48.2917C7.42036 51.3925 11.4362 53.375 15.2487 53.375C17.9451 53.375 20.531 52.3039 22.4376 50.3973C24.3442 48.4906 25.4154 45.9047 25.4154 43.2083C25.4154 41.1861 24.612 39.2466 23.1821 37.8167C21.7521 36.3867 19.8126 35.5833 17.7904 35.5833Z"
+                                  fill="#2091F9"/>
+                        </svg>
+                    </p>
+                    <h3 class="w-full graphik-black my-6 px-6 text-[20px] text-noir-primaire text-center">
+                        Lorem ipsum dolor sit amet.
+                    </h3>
+                    <p class="text-noir-secondaire text-center px-6 mb-5">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam at ipsum eu nunc commodo
+                        posuere et sit amet ligula.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="container mx-auto">
+            <video width="720" height="450" poster="./images/video-screen.png" class="mx-auto" controls>
+                <source src="./videos/tailwind-css-v3.mkv" type="video/mp4">
+            </video>
+        </div>
+    </div>
+</section>
+<!-- end bloc 2-->
+
+<!-- begin bloc organisation-->
+
+<section class="bg-white py-8">
+    <div class="container max-w-5xl mx-auto m-8">
+        <div class="flex flex-wrap">
+            <div class="w-full sm:w-1/2 p-6">
+                <h2 class="my-4 leading-tight text-center sm:text-left sm:px-10 graphik-medium text-[48px] text-noir-primaire">
+                    Fastest way to organize
+                </h2>
+                <h4 class="my-4 px-20 sm:px-10 leading-tight text-center sm:text-left graphik-medium text-[28px] text-noir-secondaire">
+                    Most calendars are designed for teams
+                </h4>
+                <p class="flex md:px-10">
+                    <button class="mx-auto md:mx-0 mt-10 bg-bleu hover:no-underline hover:bg-gris-secondaire rounded-full my-6 py-4 px-8 graphik-medium text-xl pl-14 pr-14 text-white hover:text-bleu cursor-pointer">
+                        Try it For Free
+                    </button>
+                </p>
+            </div>
+            <div class="w-full sm:w-1/2 p-6">
+                <img src="./images/macbook.png" class="w-full mx-auto">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end bloc organisation-->
+
+<!-- begin bloc newsletter-->
+<section class="bg-white py-8">
+    <div class="container max-w-5xl mx-auto m-8">
+        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+            <div class="w-full sm:w-1/2 p-6 mt-6">
+                <img src="./images/newsletter.png">
+            </div>
+            <div class="w-full sm:w-1/2 mt-6 p-6 lg:p-0">
+                <div class="align-middle sm:pl-10">
+                    <h3 class="text-center md:text-left graphik-semibold leading-none mb-3 text-noir-primaire">
+                        At your fingertips
+                    </h3>
+                    <h2 class="my-4 leading-tight text-center sm:text-left graphik-medium text-[48px] text-noir-primaire">
+                        Newsletter
+                    </h2>
+                    <div class="container mx-auto">
+                        <h4 class="my-4 leading-tight text-center sm:text-left graphik-medium text-[28px] text-noir-secondaire block md:hidden">
+                            Most calendars are designed for teams. Slate is designed for freelancers
+                        </h4>
+                    </div>
+                </div>
+                <div class="align-middle sm:pl-10 hidden md:block">
+                    <h3 class="text-center md:text-left graphik-semibold leading-none mb-3 my-5 text-noir-primaire">
+                        Subscribe to our newsletter
+                    </h3>
+                    <p class="text-noir-secondaire text-center mb-5 md:text-left">Available exclusivery on
+                        Figmaland</p>
+                    <div class="flex flex-wrap">
+                        <div class="w-full lg:w-3/5 lg:pr-2">
+                            <input type="text"
+                                   class="w-full mx-auto md:mx-0 border border-slate-300 rounded-full bg-gris-tertiaire border-gris-primaire py-4 px-8 focus:outline-none">
+                        </div>
+                        <div class="w-full lg:w-2/5 lg:pl-2">
+                            <button class="w-full mx-auto md:mx-0 bg-bleu hover:no-underline hover:bg-gris-secondaire rounded-full my-3 lg:my-0 py-3 graphik-medium text-[20px] text-white hover:text-bleu cursor-pointer">
+                                Subscribe
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- bloc newsletter hide and block -->
+        <div class="p-6 align-middle sm:pl-10 block md:hidden">
+            <h3 class="text-center md:text-left graphik-semibold leading-none mb-3 my-5 text-noir-primaire">
+                Subscribe to our newsletter
+            </h3>
+            <p class="text-noir-secondaire text-center mb-5 md:text-left">Available exclusivery on
+                Figmaland</p>
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-3/5 lg:pr-2">
+                    <input type="text"
+                           class="w-full mx-auto md:mx-0 border border-slate-300 rounded-full bg-gris-tertiaire border-gris-primaire py-4 px-8 focus:outline-none">
+                </div>
+                <div class="w-full lg:w-2/5 lg:pl-2">
+                    <button class="w-full mx-auto md:mx-0 bg-bleu hover:no-underline hover:bg-gris-secondaire rounded-full my-3 lg:my-0 py-3 graphik-medium text-[20px] text-white hover:text-bleu cursor-pointer">
+                        Subscribe
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- End bloc newsletter hide and block -->
+    </div>
+</section>
+<!-- end bloc newsletter-->
+
+
+<!-- begin bloc partner -->
+<section class="bg-white py-8">
+    <h2 class="my-4 leading-tight text-center graphik-medium text-[48px] text-noir-primaire">
+        Partners
+    </h2>
+    <h4 class="my-4 px-20 leading-tight text-center graphik-medium text-[28px] text-noir-secondaire">
+        Most calendars are designed for teams.
+        Slate is designed for freelancers
+    </h4>
+    <div class="container mx-auto max-w-5xl p-6">
+        <div class="flex flex-row flex-wrap">
+            <div class="w-full md:w-[27%] mb-6 md:mb-0 border border-gris-primaire mx-auto hover:border-bleu">
+                <a href="http://www.google.com" target="_blank" class="cursor-pointer">
+                    <div class="flex flex-col m-6">
+                        <h6 class="mx-auto py-4">Client Name</h6>
+                        <img src="./images/partners/google.png" class="mx-auto" alt="Google">
+                    </div>
+                </a>
+            </div>
+            <div class="w-full md:w-[27%] mb-6 md:mb-0 border border-gris-primaire mx-auto hover:border-bleu">
+                <a href="http://www.amazon.com" target="_blank" class="cursor-pointer">
+                    <div class="flex flex-col m-6">
+                        <h6 class="mx-auto py-4">Client Name</h6>
+                        <img src="./images/partners/amazon.png" class="mx-auto" alt="Amazon">
+                    </div>
+                </a>
+            </div>
+            <div class="w-full md:w-[27%] mb-6 md:mb-0 border border-gris-primaire mx-auto hover:border-bleu">
+                <a href="http://www.microsoft.com" target="_blank" class="cursor-pointer">
+                    <div class="flex flex-col m-6">
+                        <h6 class="mx-auto py-4">Client Name</h6>
+                        <img src="./images/partners/microsoft.png" class="mx-auto" alt="Microsoft">
+                    </div>
+                </a>
+            </div>
+            <div class="w-full md:w-[19%] mb-6 md:mb-0 border border-gris-primaire mx-auto hover:border-bleu">
+                <a href="http://www.uber.com" target="_blank" class="cursor-pointer">
+                    <div class="flex flex-col m-6">
+                        <h6 class="mx-auto py-4">Client Name</h6>
+                        <img src="./images/partners/uber.png" class="mx-auto" alt="Uber">
+                    </div>
+                </a>
+            </div>
+
+            <div class="w-full md:w-[19%] mb-6 md:mb-0 border border-gris-primaire mx-auto hover:border-bleu">
+                <a href="http://www.uber.com" target="_blank" class="cursor-pointer">
+                    <div class="flex flex-col m-6">
+                        <h6 class="mx-auto py-4">Client Name</h6>
+                        <img src="./images/partners/uber.png" class="mx-auto" alt="Uber">
+                    </div>
+                </a>
+            </div>
+            <div class="w-full md:w-[27%] mb-6 md:mb-0 border border-gris-primaire mx-auto hover:border-bleu">
+                <a href="http://www.google.com" target="_blank" class="cursor-pointer">
+                    <div class="flex flex-col m-6">
+                        <h6 class="mx-auto py-4">Client Name</h6>
+                        <img src="./images/partners/google.png" class="mx-auto" alt="Google">
+                    </div>
+                </a>
+            </div>
+            <div class="w-full md:w-[27%] mb-6 md:mb-0 border border-gris-primaire mx-auto hover:border-bleu">
+                <a href="http://www.microsoft.com" target="_blank" class="cursor-pointer">
+                    <div class="flex flex-col m-6">
+                        <h6 class="mx-auto py-4">Client Name</h6>
+                        <img src="./images/partners/microsoft.png" class="mx-auto" alt="Microsoft">
+                    </div>
+                </a>
+            </div>
+            <div class="w-full md:w-[27%] mb-6 md:mb-0 border border-gris-primaire mx-auto hover:border-bleu">
+                <a href="http://www.amazon.com" target="_blank" class="cursor-pointer">
+                    <div class="flex flex-col m-6">
+                        <h6 class="mx-auto py-4">Client Name</h6>
+                        <img src="./images/partners/amazon.png" class="mx-auto" alt="Amazon">
+                    </div>
+                </a>
+            </div>
+
+            <div class="w-full md:w-1/5 mx-auto mt-10">
+                <button class="w-full mx-auto md:mx-0 bg-bleu hover:no-underline hover:bg-gris-secondaire rounded-full my-3 lg:my-0 py-3 graphpik-medium text-[20px] text-white hover:text-bleu cursor-pointer">
+                    Try It For Free
+                </button>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- end bloc partner -->
+
+<!-- begin bloc testimonials -->
+<section class="bg-white py-8 mt-[5%]">
+    <h2 class="my-4 leading-tight text-center graphik-medium text-[48px] text-noir-primaire">
+        Testimonials
+    </h2>
+    <div class="container mx-auto max-w-5xl p-6">
+        <div class="flex flex-row flex-wrap">
+            <div class="w-full mt-10">
+                <img src="./images/ibm.png" class="mx-auto" alt="IBM">
+            </div>
+            <div class="w-full mx-auto mt-10">
+                <h4 class="my-4 px-20 leading-tight text-center graphik-medium text-[28px] text-noir-secondaire">
+                    Most calendars are designed for teams. Slate is designed for freelancers
+                    who want a simple way to plan their schedule.
+                </h4>
+            </div>
+            <div class="w-full mx-auto mt-10 flex">
+                <div class="mx-auto w-1/2">
+                    <img src="./images/testimonial.png" class="ml-auto order-2 mr-3" alt="testimonial 1">
+                </div>
+                <div class="mx-auto w-1/2">
+                    <h6>Organize across</h6>
+                    <p>UI Designer</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/5 mx-auto mt-20">
+                <button class="mx-auto w-full md:min-w-[250px] bg-bleu hover:no-underline hover:bg-gris-secondaire rounded-full my-3 lg:my-0 py-3 graphik-medium text-[20px] text-white hover:text-bleu cursor-pointer">
+                    More Testimonials
+                </button>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end bloc testimonials -->
+
+<!-- begin bloc pricing -->
+<section class="bg-noir-primaire py-8">
+    <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
+        <h2 class="my-4 leading-tight text-center graphik-medium text-[48px] text-white">
+            Pricing
+        </h2>
+        <div class="w-full mx-auto mt-10">
+            <h4 class="my-4 px-20 leading-tight text-center graphik-medium text-[28px] text-white">
+                Most calendars are designed for teams.<br>Slate is designed for freelancers
+            </h4>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-center pt-12 my-12 sm:my-7 px-4">
+            <div class="flex flex-col w-full lg:w-1/3 xl:w-1/4 mx-auto rounded-lg bg-white mt-4">
+                <div class="flex-1 bg-white rounded-lg py-6">
+                    <div class="p-8 px-20 text-center text-noir-primaire">
+                        <h3 class="text-[20px] graphik-semibold">
+                            FREE
+                        </h3>
+                        <p class="pt-4 text-noir-secondaire">
+                            Organize across all apps by hand
+                        </p>
+                    </div>
+                    <div class="p-8 px-auto text-noir-primaire w-full mx-auto flex">
+                        <div class="mx-auto w-1/2 text-5xl text-right pr-2">
+                            <h1 class="graphik-super text-[74px] text-noir-primaire">0</h1>
+                        </div>
+                        <div class="mx-auto w-1/2">
+                            <h6 class="graphik-super text-[28px] text-noir-secondaire">$</h6>
+                            <p class="graphik-regular text-[16px] text-noir-secondaire">Per month</p>
+                        </div>
+                    </div>
+                    <ul class="w-full text-center text-sm text-noir-secondaire text-[15px] graphik-regular">
+                        <li class="py-4">Pricing feature</li>
+                        <li class="py-4">Pricing feature</li>
+                        <li class="py-4">Pricing feature</li>
+                        <li class="py-4">Pricing feature</li>
+                        <li class="py-4">Pricing feature</li>
+                    </ul>
+                    <div class="flex-none mt-auto bg-white p-6">
+                        <div class="flex items-center justify-center">
+                            <button class="mx-auto w-full bg-bleu hover:no-underline hover:bg-gris-secondaire rounded-full my-3 lg:my-0 py-3 graphpik-medium text-[20px] text-white hover:text-bleu cursor-pointer">
+                                Order now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex flex-col w-full lg:w-1/3 xl:w-1/4 mx-auto rounded-lg bg-bleu mt-4 lg:-mt-7 lg:-mb-7 shadow-lg z-10 lg:mr-[5%] lg:ml-[5%] ">
+                <div class="flex-1 bg-bleu rounded-lg overflow-hidden shadow sm:mt-[2.8rem]">
+                    <div class="p-8 px-20 text-center text-white pt-[14.5%]">
+                        <h3 class="text-[20px] graphik-semibold">
+                            STANDARD
+                        </h3>
+                        <p class="pt-4 text-white">
+                            Organize across all apps by hand
+                        </p>
+                    </div>
+                    <div class="p-8 px-auto text-white w-full mx-auto flex">
+                        <div class="mx-auto w-1/2 text-5xl text-right pr-2">
+                            <h1 class="graphik-super text-[74px] text-white">10</h1>
+                        </div>
+                        <div class="mx-auto w-1/2">
+                            <h6 class="graphik-super text-[28px] text-white">$</h6>
+                            <p class="graphik-regular text-[16px] text-white">Per month</p>
+                        </div>
+                    </div>
+                    <ul class="w-full text-center text-sm text-white text-[15px] graphik-regular">
+                        <li class="py-4">Pricing feature</li>
+                        <li class="py-4">Pricing feature</li>
+                        <li class="py-4">Pricing feature</li>
+                        <li class="py-4">Pricing feature</li>
+                        <li class="py-4">Pricing feature</li>
+                    </ul>
+                    <div class="flex-none mt-auto p-6">
+                        <div class="flex items-center justify-center">
+                            <button class="mx-auto w-full hover:bg-noir-primaire hover:no-underline bg-gris-secondaire rounded-full my-3 lg:my-0 py-3 graphpik-medium text-[20px] text-bleu hover:text-white cursor-pointer">
+                                Order now
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="flex flex-col w-full lg:w-1/3 xl:w-1/4 mx-auto rounded-lg bg-white mt-4">
+                <div class="flex-1 bg-white rounded-lg py-6">
+                    <div class="p-8 px-20 text-center text-noir-primaire">
+                        <h3 class="text-[20px] graphik-semibold">
+                            BUSINESS
+                        </h3>
+                        <p class="pt-4 text-noir-secondaire">
+                            Organize across all apps by hand
+                        </p>
+                    </div>
+                    <div class="p-8 px-auto text-noir-primaire w-full mx-auto flex">
+                        <div class="mx-auto w-1/2 text-5xl text-right pr-2">
+                            <h1 class="graphik-super text-[74px] text-noir-primaire">99</h1>
+                        </div>
+                        <div class="mx-auto w-1/2">
+                            <h6 class="graphik-super text-[28px] text-noir-secondaire">$</h6>
+                            <p class="graphik-regular text-[16px] text-noir-secondaire">Per month</p>
+                        </div>
+                    </div>
+                    <ul class="w-full text-center text-sm text-noir-secondaire text-[15px] graphik-regular">
+                        <li class="py-4">Pricing feature</li>
+                        <li class="py-4">Pricing feature</li>
+                        <li class="py-4">Pricing feature</li>
+                        <li class="py-4">Pricing feature</li>
+                        <li class="py-4">Pricing feature</li>
+                    </ul>
+                    <div class="flex-none mt-auto bg-white p-6">
+                        <div class="flex items-center justify-center">
+                            <button class="mx-auto w-full bg-bleu hover:no-underline hover:bg-gris-secondaire rounded-full my-3 lg:my-0 py-3 graphpik-medium text-[20px] text-white hover:text-bleu cursor-pointer">
+                                Order now
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end bloc pricing -->
+
+
+<!-- begin Contact us -->
+<section class="bg-white py-8 px-3 mt-[15%] md:mt-[5%]" id="contact">
+    <h2 class="my-4 leading-tight text-center graphik-medium text-[48px] text-noir-primaire">
+        Contact us
+    </h2>
+    <h4 class="my-4 px-20 leading-tight text-center graphik-medium text-[28px] text-noir-secondaire space-y-2">
+        Most calendars are designed for teams.<br>
+        Slate is designed for freelancers
+    </h4>
+    <div class="flex mt-[5%] px-4">
+        <div class="container mx-auto flex flex-wrap pt-4 pb-12 flex-col-reverse md:flex-row">
+            <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink border border-gris-primaire rounded-2xl shadow-xl">
+                <div class="flex-1 mx-[5%] py-8">
+                    <h3 class="w-full graphik-black mb-6 px-6 text-[20px] text-noir-primaire text-center">
+                        Contact us
+                    </h3>
+                    <form @submit="checkForm" action="" method="post" novalidate>
+                        <input type="text"
+                               class="w-full md:mx-0 border border-slate-300 rounded-full bg-gris-tertiaire border-gris-primaire py-4 px-8 focus:outline-none mt-[5%]"
+                               placeholder="Your name">
+                        <i class="text-[12px] text-rouge">{{ errors.name }}</i>
+                        <input type="text"
+                               class="w-full md:mx-0 rounded-full border border-slate-300 bg-gris-tertiaire border-gris-primaire py-4 px-8 focus:outline-none mt-[10%]"
+                               placeholder="Your email">
+                        <i class="text-[12px] text-rouge">{{ errors.mail }}</i>
+                        <textarea
+                                class="w-full md:mx-0 border border-slate-300 bg-gris-tertiaire border-gris-primaire py-4 px-8 focus:outline-none mt-[10%]"
+                                rows="10" placeholder="Your message"></textarea>
+                        <i class="text-[12px] text-rouge">{{ errors.message }}</i>
+
+                        <button type="submit"
+                                class="block mt-[20%] w-[125px] bg-bleu hover:no-underline hover:bg-gris-secondaire rounded-full my-3 py-3 graphik-medium text-[20px] text-white hover:text-bleu cursor-pointer">
+                            Send
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="w-full md:w-2/3 p-6 flex flex-col flex-grow flex-shrink">
+                <div class="flex mx-auto flex-col-reverse md:flex-col">
+                    <div class="container mx-auto flex flex-wrap pt-4 pb-6">
+                        <div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
+                            <div class="flex flex-row md:flex-col mx-auto justify-center items-center w-full">
+                                <div class="w-1/5 md:w-full">
+                                    <svg width="26" height="33" viewBox="0 0 26 33" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg" class="ml-auto md:mx-auto">
+                                        <g clip-path="url(#clip0_67_7924)">
+                                            <path d="M13.0013 19.884C16.4941 19.884 19.3346 17.0435 19.3346 13.5506C19.3346 10.0578 16.4941 7.21729 13.0013 7.21729C9.50847 7.21729 6.66797 10.0578 6.66797 13.5506C6.66797 17.0435 9.50847 19.884 13.0013 19.884ZM13.0013 10.384C14.7477 10.384 16.168 11.8042 16.168 13.5506C16.168 15.297 14.7477 16.7173 13.0013 16.7173C11.2549 16.7173 9.83464 15.297 9.83464 13.5506C9.83464 11.8042 11.2549 10.384 13.0013 10.384Z"
+                                                  fill="#2091F9"/>
+                                            <path d="M11.7485 32.256C12.0164 32.4473 12.3375 32.5502 12.6668 32.5502C12.9961 32.5502 13.3172 32.4473 13.5851 32.256C14.0665 31.9155 25.3794 23.7471 25.3335 13.5505C25.3335 6.56637 19.6509 0.883789 12.6668 0.883789C5.68272 0.883789 0.000139393 6.56637 0.000139393 13.5425C-0.0457773 23.7471 11.2671 31.9155 11.7485 32.256ZM12.6668 4.05046C17.9061 4.05046 22.1668 8.31121 22.1668 13.5584C22.2001 20.5852 15.2191 26.8948 12.6668 28.9642C10.1161 26.8932 3.13356 20.582 3.16681 13.5505C3.16681 8.31121 7.42756 4.05046 12.6668 4.05046Z"
+                                                  fill="#2091F9"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_67_7924">
+                                                <rect width="26" height="32" fill="white"
+                                                      transform="translate(0 0.717285)"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+
+                                </div>
+                                <div class="w-5/6 md:w-full text-noir-secondaire text-left md:text-center my-6 px-6 mb-5">
+                                    6386 Spring St undefined Anchorage, Georgia 12473 United States
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
+                            <div class="flex flex-row md:flex-col mx-auto justify-center items-center w-full">
+                                <div class="w-1/5 md:w-full">
+                                    <svg width="22" height="35" viewBox="0 0 22 35" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg" class="ml-auto md:mx-auto">
+                                        <g clip-path="url(#clip0_67_7930)">
+                                            <path d="M16.5417 1.17578H4.875C2.45417 1.17578 0.5 3.12995 0.5 5.55078V28.8841C0.5 31.3049 2.45417 33.2591 4.875 33.2591H16.5417C18.9625 33.2591 20.9167 31.3049 20.9167 28.8841V5.55078C20.9167 3.12995 18.9625 1.17578 16.5417 1.17578ZM13.625 30.3424H7.79167V28.8841H13.625V30.3424ZM18.3646 25.9674H3.05208V5.55078H18.3646V25.9674Z"
+                                                  fill="#2091F9"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_67_7930">
+                                                <rect width="21" height="34" fill="white"
+                                                      transform="translate(0.5 0.217285)"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="w-5/6 md:w-full text-noir-secondaire text-left md:text-center my-6 px-6 mb-5">
+                                    (843) 555-0130
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/3 flex flex-col flex-grow flex-shrink">
+                            <div class="flex flex-row md:flex-col mx-auto justify-center items-center w-full">
+                                <div class="w-1/5 md:w-full">
+                                    <svg width="28" height="23" viewBox="0 0 28 23" fill="none"
+                                         xmlns="http://www.w3.org/2000/svg" class="ml-auto md:mx-auto">
+                                        <g clip-path="url(#clip0_67_7936)">
+                                            <path d="M25.8125 0.904785H1.4375C0.918945 0.904785 0.5 1.32373 0.5 1.84229V20.5923C0.5 21.1108 0.918945 21.5298 1.4375 21.5298H25.8125C26.3311 21.5298 26.75 21.1108 26.75 20.5923V1.84229C26.75 1.32373 26.3311 0.904785 25.8125 0.904785ZM24.6406 4.15088V19.4204H2.60938V4.15088L1.80078 3.521L2.95215 2.0415L4.20605 3.01709H23.0469L24.3008 2.0415L25.4521 3.521L24.6406 4.15088ZM23.0469 3.01416L13.625 10.3384L4.20312 3.01416L2.94922 2.03857L1.79785 3.51807L2.60645 4.14795L12.6143 11.9292C12.9021 12.1528 13.2561 12.2742 13.6206 12.2742C13.9851 12.2742 14.3391 12.1528 14.627 11.9292L24.6406 4.15088L25.4492 3.521L24.2979 2.0415L23.0469 3.01416Z"
+                                                  fill="#2091F9"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_67_7936">
+                                                <rect width="27" height="22" fill="white"
+                                                      transform="translate(0.5 0.217285)"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>
+                                </div>
+                                <div class="w-5/6 md:w-full text-noir-secondaire text-left md:text-center my-6 px-6 mb-5">
+                                    willie.jennings@example.com
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./images/map.png"
+                         class="w-full my-6 px-6 text-[20px] text-center mx-auto max-w-[750px] mb-[8%] hidden md:block"/>
+                    <div class="w-full mx-auto md:mx-0 px-6 mb-5 flex justify-center md:justify-start md:ml-[5%] ">
+                        <!--twitter-->
+                        <a href="#">
+                            <svg width="34" height="28" viewBox="0 0 34 28" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg" class="mr-[20px]">
+                                <path d="M33.6455 4.0808C32.4207 4.60914 31.0878 4.98939 29.7149 5.13749C31.1403 4.29068 32.2077 2.95287 32.7168 1.37505C31.3793 2.17072 29.914 2.72866 28.386 3.02412C27.7474 2.34138 26.975 1.79748 26.117 1.42631C25.2589 1.05514 24.3337 0.864651 23.3988 0.866716C19.6163 0.866716 16.5744 3.93271 16.5744 7.69515C16.5744 8.22349 16.6384 8.75183 16.7425 9.26016C11.0788 8.96397 6.02753 6.25821 2.66936 2.11553C2.05746 3.16067 1.7368 4.35068 1.74075 5.56176C1.74075 7.9313 2.94553 10.0207 4.78273 11.2495C3.70004 11.2068 2.64271 10.9092 1.69672 10.3809V10.4649C1.69672 13.7831 4.04225 16.5329 7.16827 17.1653C6.58133 17.3178 5.97753 17.3957 5.37111 17.3974C4.92682 17.3974 4.50655 17.3534 4.08227 17.2934C4.94683 19.9991 7.46447 21.9644 10.4624 22.0284C8.11689 23.8656 5.17898 24.9463 1.98891 24.9463C1.41654 24.9463 0.8882 24.9263 0.339844 24.8623C3.36581 26.8035 6.95614 27.9243 10.8226 27.9243C23.3748 27.9243 30.2432 17.5255 30.2432 8.49967C30.2432 8.20348 30.2432 7.90728 30.2232 7.61109C31.5521 6.63846 32.7168 5.43368 33.6455 4.0808Z"
+                                      fill="#2091F9"/>
+                            </svg>
+                        </a>
+                        <!--/twitter-->
+                        <!--facebook-->
+                        <a href="#">
+                            <svg width="33" height="28" viewBox="0 0 33 33" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg" class="mr-[20px]">
+                                <path d="M31.7126 0.385254H2.25349C1.54503 0.385254 0.972656 0.957625 0.972656 1.66609V31.1252C0.972656 31.8337 1.54503 32.406 2.25349 32.406H31.7126C32.4211 32.406 32.9934 31.8337 32.9934 31.1252V1.66609C32.9934 0.957625 32.4211 0.385254 31.7126 0.385254ZM28.0142 9.73132H25.4565C23.4512 9.73132 23.063 10.6839 23.063 12.0848V15.1708H27.8501L27.2257 20.002H23.063V32.406H18.0718V20.006H13.897V15.1708H18.0718V11.6085C18.0718 7.47385 20.5974 5.22039 24.2878 5.22039C26.0569 5.22039 27.5739 5.35248 28.0182 5.41252V9.73132H28.0142Z"
+                                      fill="#2091F9"/>
+                            </svg>
+                        </a>
+                        <!--/facebook-->
+
+                        <!--linkedin-->
+                        <a href="#">
+                            <svg width="33" height="28" viewBox="0 0 33 33" fill="none"
+                                 xmlns="http://www.w3.org/2000/svg">
+                                <path d="M31.697 0.385254H2.23786C1.5294 0.385254 0.957031 0.957625 0.957031 1.66609V31.1252C0.957031 31.8337 1.5294 32.406 2.23786 32.406H31.697C32.4054 32.406 32.9778 31.8337 32.9778 31.1252V1.66609C32.9778 0.957625 32.4054 0.385254 31.697 0.385254ZM10.4552 27.671H5.70411V12.389H10.4552V27.671ZM8.08165 10.2997C7.53701 10.2997 7.00459 10.1382 6.55173 9.83559C6.09887 9.533 5.74591 9.10292 5.53749 8.59973C5.32906 8.09654 5.27453 7.54285 5.38078 7.00866C5.48704 6.47448 5.74931 5.9838 6.13443 5.59868C6.51956 5.21355 7.01023 4.95128 7.54442 4.84503C8.0786 4.73877 8.63229 4.7933 9.13548 5.00173C9.63867 5.21016 10.0688 5.56312 10.3713 6.01598C10.6739 6.46884 10.8354 7.00125 10.8354 7.5459C10.8314 9.06689 9.59864 10.2997 8.08165 10.2997ZM28.2427 27.671H23.4957V20.2381C23.4957 18.465 23.4636 16.1875 21.0261 16.1875C18.5565 16.1875 18.1762 18.1168 18.1762 20.1101V27.671H13.4331V12.389H17.9881V14.4784H18.0521C18.6845 13.2776 20.2335 12.0088 22.547 12.0088C27.3582 12.0088 28.2427 15.1748 28.2427 19.2895V27.671Z"
+                                      fill="#2091F9"/>
+                            </svg>
+                        </a>
+                        <!--/linkedin-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- end Contact us -->
+<!--Footer-->
+<footer class="bg-noir-primaire text-white">
+    <div class="container mx-auto px-20 pt-15">
+        <div class="w-full flex flex-col md:flex-row py-6 pt-[10%]">
+            <div class="flex-1 mt-5 md:mt-0 text-center md:text-left">
+                <h3 class="md:mb-6 graphik-bold">Pages</h3>
+                <ul class="list-reset mb-6">
+                    <li class="mt-5 block md:block md:mr-0">
+                        <a href="#" class="no-underline hover:underline text-white hover:text-bleu">Home</a>
+                    </li>
+                    <li class="mt-5 block md:block md:mr-0">
+                        <a href="#" class="no-underline hover:underline text-white hover:text-bleu">Product</a>
+                    </li>
+                    <li class="mt-5 block  md:block md:mr-0">
+                        <a href="#" class="no-underline hover:underline text-white hover:text-bleu">Pricing</a>
+                    </li>
+                    <li class="mt-5 block md:block md:mr-0">
+                        <a href="#" class="no-underline hover:underline text-white hover:text-bleu">About</a>
+                    </li>
+                    <li class="mt-5 block md:block md:mr-0">
+                        <a href="#" class="no-underline hover:underline text-white hover:text-bleu">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-1 mt-5 md:mt-0 text-center md:text-left">
+                <h3 class="text-white graphik-bold md:mb-6">Tomothy</h3>
+                <ul class="list-reset mb-6">
+                    <li class="mt-5 md:block md:mr-0">
+                        <a href="#" class="no-underline hover:underline text-white hover:text-bleu">Eleanor Edwards</a>
+                    </li>
+                    <li class="mt-5 md:block md:mr-0">
+                        <a href="#" class="no-underline hover:underline text-white hover:text-bleu">Ted Robertson</a>
+                    </li>
+                    <li class="mt-5 md:block md:mr-0">
+                        <a href="#" class="no-underline hover:underline text-white hover:text-bleu">Annette Russell</a>
+                    </li>
+                    <li class="mt-5 md:block md:mr-0">
+                        <a href="#" class="no-underline hover:underline text-white hover:text-bleu">Jennie Mckinney</a>
+                    </li>
+                    <li class="mt-5 md:block md:mr-0">
+                        <a href="#" class="no-underline hover:underline text-white hover:text-bleu">Gloria Richards</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-1 mt-5 md:mt-0 text-center md:text-left">
+                <h3 class="text-white graphik-bold md:mb-6">Jane Black</h3>
+                <ul class="list-reset mb-6">
+                    <li class="mt-5 md:block md:mr-0">
+                        <a href="#" class="no-underline hover:underline text-white hover:text-bleu">Philip Jones</a>
+                    </li>
+                    <li class="mt-5 md:block md:mr-0">
+                        <a href="#" class="no-underline hover:underline text-white hover:text-bleu">Product</a>
+                    </li>
+                    <li class="mt-5 md:block md:mr-0">
+                        <a href="#" class="no-underline hover:underline text-white hover:text-bleu">Colleen Russell</a>
+                    </li>
+                    <li class="mt-5 md:block md:mr-0">
+                        <a href="#" class="no-underline hover:underline text-white hover:text-bleu">Marvin Hawkins</a>
+                    </li>
+                    <li class="mt-5 md:block md:mr-0">
+                        <a href="#" class="no-underline hover:underline text-white hover:text-bleu">MBruce Simmons</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="flex-1 mt-5 md:mt-0">
+                <p class="text-white mb-6 flex flex-row items-center">
+                    <svg width="31" height="32" viewBox="0 0 46 47" fill="none" xmlns="http://www.w3.org/2000/svg"
+                         class="mr-2">
+                        <path d="M22.9987 27.1366C27.2269 27.1366 30.6654 23.6981 30.6654 19.4699C30.6654 15.2417 27.2269 11.8032 22.9987 11.8032C18.7705 11.8032 15.332 15.2417 15.332 19.4699C15.332 23.6981 18.7705 27.1366 22.9987 27.1366ZM22.9987 15.6366C25.1128 15.6366 26.832 17.3558 26.832 19.4699C26.832 21.584 25.1128 23.3032 22.9987 23.3032C20.8846 23.3032 19.1654 21.584 19.1654 19.4699C19.1654 17.3558 20.8846 15.6366 22.9987 15.6366Z"
+                              fill="white"/>
+                        <path d="M21.8898 42.1136C22.2142 42.3452 22.6029 42.4697 23.0015 42.4697C23.4001 42.4697 23.7887 42.3452 24.1131 42.1136C24.6958 41.7015 38.3904 31.8134 38.3348 19.4701C38.3348 11.0156 31.4559 4.13672 23.0015 4.13672C14.5471 4.13672 7.66814 11.0156 7.66814 19.4605C7.61255 31.8134 21.3071 41.7015 21.8898 42.1136ZM23.0015 7.97005C29.3437 7.97005 34.5015 13.1278 34.5015 19.4796C34.5417 27.9858 26.0911 35.6237 23.0015 38.1288C19.9137 35.6218 11.4612 27.982 11.5015 19.4701C11.5015 13.1278 16.6592 7.97005 23.0015 7.97005Z"
+                              fill="white"/>
+                    </svg>
+                    7480 Mockingbird Hill undefined
+                </p>
+
+                <p class="text-white mb-6 flex flex-row">
+                    <svg width="31" height="25" viewBox="0 0 35 36" fill="none" xmlns="http://www.w3.org/2000/svg"
+                         class="mr-2">
+                        <path d="M23.3346 1.76172H11.668C9.24714 1.76172 7.29297 3.71589 7.29297 6.13672V29.4701C7.29297 31.8909 9.24714 33.8451 11.668 33.8451H23.3346C25.7555 33.8451 27.7096 31.8909 27.7096 29.4701V6.13672C27.7096 3.71589 25.7555 1.76172 23.3346 1.76172ZM20.418 30.9284H14.5846V29.4701H20.418V30.9284ZM25.1576 26.5534H9.84505V6.13672H25.1576V26.5534Z"
+                              fill="white"/>
+                    </svg>
+                    (239) 555-0108
+                </p>
+                <div class="text-white mb-6 flex md:justify-start justify-center">
+                    <!--twitter-->
+                    <a href="#">
+                        <svg width="35" height="36" viewBox="0 0 41 42" fill="none" xmlns="http://www.w3.org/2000/svg"
+                             class="mr-2">
+                            <path d="M37.1455 10.4817C35.9207 11.01 34.5878 11.3903 33.2149 11.5384C34.6403 10.6916 35.7077 9.35375 36.2168 7.77592C34.8793 8.5716 33.414 9.12954 31.886 9.42499C31.2474 8.74226 30.475 8.19836 29.617 7.82719C28.7589 7.45602 27.8337 7.26553 26.8988 7.26759C23.1163 7.26759 20.0744 10.3336 20.0744 14.096C20.0744 14.6244 20.1384 15.1527 20.2425 15.661C14.5788 15.3648 9.52753 12.6591 6.16936 8.5164C5.55746 9.56154 5.2368 10.7516 5.24075 11.9626C5.24075 14.3322 6.44553 16.4215 8.28273 17.6503C7.20004 17.6077 6.14271 17.3101 5.19672 16.7818V16.8658C5.19672 20.184 7.54225 22.9338 10.6683 23.5662C10.0813 23.7186 9.47753 23.7966 8.87111 23.7983C8.42682 23.7983 8.00655 23.7543 7.58227 23.6943C8.44683 26.4 10.9645 28.3653 13.9624 28.4293C11.6169 30.2665 8.67898 31.3472 5.48891 31.3472C4.91654 31.3472 4.3882 31.3272 3.83984 31.2632C6.86581 33.2044 10.4561 34.3252 14.3226 34.3252C26.8748 34.3252 33.7432 23.9264 33.7432 14.9005C33.7432 14.6044 33.7432 14.3082 33.7232 14.012C35.0521 13.0393 36.2168 11.8346 37.1455 10.4817Z"
+                                  fill="white"/>
+                        </svg>
+                    </a>
+                    <!--/twitter-->
+                    <!--facebook-->
+                    <a href="#">
+                        <svg width="25" height="36" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg"
+                             class="mr-3">
+                            <path d="M31.2126 0.786133H1.75349C1.04503 0.786133 0.472656 1.3585 0.472656 2.06696V31.5261C0.472656 32.2345 1.04503 32.8069 1.75349 32.8069H31.2126C31.9211 32.8069 32.4934 32.2345 32.4934 31.5261V2.06696C32.4934 1.3585 31.9211 0.786133 31.2126 0.786133ZM27.5142 10.1322H24.9565C22.9512 10.1322 22.563 11.0848 22.563 12.4857V15.5717H27.3501L26.7257 20.4029H22.563V32.8069H17.5718V20.4069H13.397V15.5717H17.5718V12.0094C17.5718 7.87473 20.0974 5.62127 23.7878 5.62127C25.5569 5.62127 27.0739 5.75336 27.5182 5.8134V10.1322H27.5142Z"
+                                  fill="white"/>
+                        </svg>
+                    </a>
+                    <!--/facebook-->
+                    <!--linkedin-->
+                    <a href="#">
+                        <svg width="25" height="36" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M31.197 0.786133H1.73786C1.0294 0.786133 0.457031 1.3585 0.457031 2.06696V31.5261C0.457031 32.2345 1.0294 32.8069 1.73786 32.8069H31.197C31.9054 32.8069 32.4778 32.2345 32.4778 31.5261V2.06696C32.4778 1.3585 31.9054 0.786133 31.197 0.786133ZM9.95519 28.0718H5.20411V12.7899H9.95519V28.0718ZM7.58165 10.7006C7.03701 10.7006 6.50459 10.5391 6.05173 10.2365C5.59887 9.93388 5.24591 9.5038 5.03749 9.00061C4.82906 8.49742 4.77453 7.94372 4.88078 7.40954C4.98704 6.87536 5.24931 6.38468 5.63443 5.99956C6.01956 5.61443 6.51023 5.35216 7.04442 5.24591C7.5786 5.13965 8.13229 5.19418 8.63548 5.40261C9.13867 5.61104 9.56875 5.964 9.87134 6.41686C10.1739 6.86972 10.3354 7.40213 10.3354 7.94678C10.3314 9.46777 9.09864 10.7006 7.58165 10.7006ZM27.7427 28.0718H22.9957V20.639C22.9957 18.8659 22.9636 16.5884 20.5261 16.5884C18.0565 16.5884 17.6762 18.5176 17.6762 20.5109V28.0718H12.9331V12.7899H17.4881V14.8793H17.5521C18.1845 13.6785 19.7335 12.4097 22.047 12.4097C26.8582 12.4097 27.7427 15.5757 27.7427 19.6904V28.0718Z"
+                                  fill="white"/>
+                        </svg>
+                    </a>
+                    <!--/linkedin-->
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<script>
+    const menu = document.querySelector(".menu");
+    const menuItems = document.querySelectorAll(".menuItem");
+    const hamburger = document.querySelector(".hamburger");
+    const closeIcon = document.querySelector(".closeIcon");
+    const menuIcon = document.querySelector(".menuIcon");
+
+    function toggleMenu() {
+        if (menu.classList.contains("showMenu")) {
+            menu.classList.remove("showMenu");
+            closeIcon.style.display = "none";
+            menuIcon.style.display = "block";
+        } else {
+            menu.classList.add("showMenu");
+            closeIcon.style.display = "block";
+            menuIcon.style.display = "none";
+        }
+    }
+
+    hamburger.addEventListener("click", toggleMenu);
+    closeIcon.addEventListener("click", toggleMenu);
+</script>
+</body>
+</html>
